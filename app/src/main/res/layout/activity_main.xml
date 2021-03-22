@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="43dp"
+        android:fontFamily="@font/manropeextrabold"
+        android:gravity="center"
+        android:textColor="@color/escola_moeda"
+        android:text="@string/escola_a_moeda_que_deseja_converter"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="22dp"
+        android:paddingLeft="14.5dp"
+        android:background="@drawable/backgroud_edit_text"
+        android:hint="@string/preencha_com_o_valor_a_ser_convertido"
+        android:textColor="@color/infinito"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_eua"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:paddingBottom="28dp"
+            android:drawableTop="@drawable/eua"
+            android:paddingTop="30dp"
+            android:background="@drawable/background_button"
+            android:fontFamily="@font/manropebold"
+            android:text="@string/dolar"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_mexiconaousaeurodirceu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:paddingBottom="28dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/mexiconaousaeurodirceu"
+            android:paddingTop="30dp"
+            android:background="@drawable/background_button"
+            android:fontFamily="@font/manropebold"
+            android:text="@string/euro"
+            android:textAllCaps="false"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_rasputin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:paddingBottom="28dp"
+            android:drawableTop="@drawable/rasputin"
+            android:paddingTop="30dp"
+            android:background="@drawable/background_button"
+            android:fontFamily="@font/manropebold"
+            android:text="@string/rublo"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_arabia_saudita"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:paddingBottom="28dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/arabiasaudita"
+            android:paddingTop="30dp"
+            android:background="@drawable/background_button"
+            android:fontFamily="@font/manropebold"
+            android:text="@string/dirr"
+            android:textAllCaps="false"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_japao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/japao"
+            android:paddingTop="30dp"
+            android:background="@drawable/background_button"
+            android:fontFamily="@font/manropebold"
+            android:text="@string/iene"
+            android:paddingBottom="28dp"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_india"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/india"
+            android:paddingTop="30dp"
+            android:background="@drawable/background_button"
+            android:fontFamily="@font/manropebold"
+            android:text="@string/rupia"
+            android:paddingBottom="28dp"
+            android:textAllCaps="false"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="51.5dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/backgroud_edit_text"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/conversao_em"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="19dp"
+            android:fontFamily="@font/manropesemibold"
+            android:textSize="14sp"
+            android:textColor="@color/escola_moeda"
+            android:text="@string/convers_o_em_dolar"/>
+
+        <TextView
+            android:id="@+id/valor_moeda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manroperegular"
+            android:textSize="14sp"
+            android:textColor="@color/cor_moeda"
+            android:text="U$ 300,00"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
