@@ -46,21 +46,21 @@ class MainActivity : AppCompatActivity() {
         conversao_em.text = resources.getString(R.string.convers_o_em_euro)
         var valor = e_txt_valor.text.toString().toDouble()
         var conversao = valor * 0.15
-        valor_moeda.text = String.format("€ %.2f",conversao)
+        valor_moeda.text = String.format("%.2f €",conversao)
     }
 
     fun calculaRublo() {
         conversao_em.text = resources.getString(R.string.convers_o_em_rublo)
         var valor = e_txt_valor.text.toString().toDouble()
         var conversao = valor * 13.53
-        valor_moeda.text = String.format("₱ %.2f",conversao)
+        valor_moeda.text = String.format("%.2f ₱",conversao)
     }
 
     fun calculaDirra() {
         conversao_em.text = resources.getString(R.string.convers_o_em_dirra)
         var valor = e_txt_valor.text.toString().toDouble()
         var conversao = valor * 1.49
-        valor_moeda.text = String.format("Dirham %.2f",conversao)
+        valor_moeda.text = String.format("%.2f Dirham",conversao)
     }
 
     fun calculaIene() {
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
         conversao_em.text = resources.getString(R.string.convers_o_em_rupia)
         var valor = e_txt_valor.text.toString().toDouble()
         var conversao = valor * 13.18540
-        valor_moeda.text = String.format("INR %.2f",conversao)
+        valor_moeda.text = String.format("%.2f INR",conversao)
     }
 
 }
